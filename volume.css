@@ -1,0 +1,32 @@
+/* Volume Controls Container */
+.volume-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Volume Buttons */
+.volume-btn {
+    background: linear-gradient(135deg, #ff4b5c, #ff7b82);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 75, 92, 0.3);
+}
+
+/* Hover Effect */
+.volume-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #ff7b82, #ff4b5c);
+}
+
+/* Active Click Effect */
+.volume-btn:active {
+    transform: scale(0.95);
+}
