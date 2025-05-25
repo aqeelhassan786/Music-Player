@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="songlist.css">
+    <link rel="stylesheet" href="volume.css">
+
+
+   
+
+</head>
+<body>
+    <input type="text" id="search-bar" placeholder="Search for a song...">
+    <div class="container">
+        <div class="music-player">
+            <h2 id="track-title">Song Title</h2>
+            <h3 id="track-artist">Artist Name</h3>
+            <audio id="audio-player" src="music/AAJ_DIN_CHADHEYA_-_Full_Audio_Song____Love_Aaj_Kal___Saif_Ali_Khan_&_Giselli_Monteiro(256kbps).mp3"></audio>
+            <input type="range" id="progress-bar" value="0">
+            <div class="controls">
+                <button id="prev-btn">⏮</button>
+                <button id="play-btn">▶</button>
+                <button id="next-btn">⏭</button>
+            </div>
+            <div id="lyrics">Lyrics will appear here...</div>
+
+            <div class="volume-controls">
+                <button class="volume-btn" id="decrease-volume">🔉 Decrease</button>
+                <button class="volume-btn" id="increase-volume">🔊 Increase</button>
+            </div>
+            
+        </div>
+        <div class="song-list">
+            <h2>Song List</h2>
+            <ul id="song-list"></ul>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="volume.js"></script>
+
+</body>
+</html>
+
